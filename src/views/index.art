@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div>
+        <h5>现存商品{{all}}</h5>
+        <p>总销售额{{ money }}</p>
+    </div>
+</body>
+</html>

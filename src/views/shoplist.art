@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {{ each shop }}
+        <div>
+            <h5>商品{{ $value.goodName }}</h5>
+            <p>销售额{{ $$value.price }}</p>
+        </div>
+    {{ each shop }}
+</body>
+</html>
