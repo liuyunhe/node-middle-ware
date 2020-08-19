@@ -41,11 +41,15 @@
 const express = require('express')
 const app = express()
 const router = require('./src/router')
-// 设置模板
 
+// radis缓存
+global.caches = {}
+// 设置模板
 app.engine("art", require('express-art-template'))
 app.set('views','./src/views')
 app.use('/',router)
 app.listen(3500,function () {
   console.log('server start ...');
 })
+
+// a,b,c,d  负载均衡，分担请求    
